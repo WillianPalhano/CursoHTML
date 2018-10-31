@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FonteLogo';
+    src: url(../fontes/bubblegum-sans-regular.otf);
+}
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+p {
+    text-align: justify; 
+    text-indent: 50px;
+}
+
+body {
+    background-color: #dddddd;
+}
+
+/*Formatação de imagens com legendas*/
+
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+    background-color: white;
+}
+
+figure.foto-legenda img{
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/*Formatação do menu*/
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: relative;
+    top: -120px;
+    left: 280px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu h1 {
+    display: none;
+}
+
+nav#menu li:hover {
+    background-color: grey;
+    
+}
+
+nav#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: white;
+}
+
+section#corpo {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 20px;
+}
+
+aside#lateral {
+    display: block;
+    width: 350px;
+    float: right;
+}
+
+footer#rodape {
+    clear: both;
+    text-align: center;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p{
+    text-align: center;
+}
+
+div#interface {
+    width: 900px;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px;
+}
+
+header#cabecalho img#imgHome {
+    position: relative;
+    left: 600px;
+    top: -120px;
+}
+
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height: 160px;
+    background-image: url("../img/glass-logo-peq.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 140px;
+    padding-bottom: 30px;
+}
+
+header#cabecalho h1 {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 40pt;
+    color: #606060;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-top: -10px;
+}
+
+header#cabecalho h2 {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 15pt;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
+}
